@@ -1,5 +1,3 @@
-.DEFAULT_GOAL := build
-
 test:
 	go test
 
