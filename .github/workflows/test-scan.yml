@@ -1,4 +1,4 @@
-name: go-test-scan
+name: test-scan
 
 on: [push]
 

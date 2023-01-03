@@ -1,0 +1,11 @@
+name: test, scan and release
+
+on: [push]
+
+jobs:
+  test-scan:
+    uses: ./.github/workflows/test-scan.yml@main
+  release:
+    needs:
+      - test-scan
+    uses: ./.github/workflows/release.yml@main
